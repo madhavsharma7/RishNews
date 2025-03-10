@@ -1,0 +1,86 @@
+<style>
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the form */
+.signup-form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Form Inputs */
+.signup-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #45a049;
+}
+
+/* Form Validation and Error Message */
+.error-message {
+  color: #f44336;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .signup-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 20px;
+  }
+}
