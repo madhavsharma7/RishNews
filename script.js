@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     function fetchTopHeadlines() {
-        const apiKey = '91bc068e164f530039c136edab01b9f4';
+        const apiKey = '773dcaa65d9b9a5df06b87e05a18b242';
         const category = 'general';
         const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=in&max=5&apikey=${apiKey}`;
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchSearchResults() {
-        const apiKey = '91bc068e164f530039c136edab01b9f4';
+        const apiKey = '773dcaa65d9b9a5df06b87e05a18b242';
         const url = `https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=5&apikey=${apiKey}`;
 
         fetch(url)
