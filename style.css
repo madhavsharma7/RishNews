@@ -68,17 +68,18 @@
 }
 
 /* Subscribe Button */
-#search button {
+.sub  {
   background-color: #c00;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1vw;
+  text-decoration: none;
 }
 
-#search button:hover {
+.sub:hover {
   background-color: #900;
 }
 
@@ -101,7 +102,6 @@
 }
 
 #news-container {
-
   grid-gap: 20px;
   padding: 20px;
 }
