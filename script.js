@@ -17,19 +17,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 if (!data.articles || data.articles.length === 0) {
-                    container.innerHTML = '<p>No headlines available.</p>';
+                    container.innerHTML = '<p>No Headlines Available.</p>';
                     return;
                 }
 
                 container.innerHTML = ''; // Clear previous results
                 data.articles.forEach(article => {
                     let newsItem = document.createElement('div');
+                    newsItem.classList.add("headline-item"); // Add a class to style the container
+
                     newsItem.innerHTML = `
-                        <img src="${article.image || 'fallback-image.jpg'}" alt="${article.title}" style="width:100%; max-width:500px;">
-                        <h2>${article.title}</h2>
-                        <p>${article.description}</p>
-                        <p><a href="${article.url}" target="_blank">Read more</a></p>
+                    
+                        <img class="img" src="${article.image || 'fallback-image.jpg'}" alt="${article.title}" style="width:100%; max-width:500px;">
+                        <h2 class="title">${article.title}</h2>
+                        <p class="desc">${article.description}</p>
+                        <p class="readmore"><a href="${article.url}" target="_blank"> Read more</a></p>
                         <hr>
+                    
                     `;
                     container.appendChild(newsItem);
                 });
@@ -56,18 +60,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 if (!data.articles || data.articles.length === 0) {
-                    container.innerHTML = '<p>No search results available.</p>';
+                    container.innerHTML = '<p>No Latest News Available</p>';
                     return;
                 }
 
                 container.innerHTML = ''; // Clear previous results
                 data.articles.forEach(article => {
                     let newsItem = document.createElement('div');
+                    newsItem.classList.add("news-item")
                     newsItem.innerHTML = `
-                        <img src="${article.image || 'fallback-image.jpg'}" alt="${article.title}" style="width:100%; max-width:500px;">
-                        <h2>${article.title}</h2>
-                        <p>${article.description}</p>
-                        <p><a href="${article.url}" target="_blank">Read more</a></p>
+                        <img class="img-news" src="${article.image || 'fallback-image.jpg'}" alt="${article.title}" style="width:100%; max-width:500px;">
+                        <h2 class="h2-news">${article.title}</h2>
+                        <p class="p-news">${article.description}</p>
+                        <p class="readmore-news"> <a href="${article.url}" target="_blank">Read more</a></p>
                         <hr>
                     `;
                     container.appendChild(newsItem);
