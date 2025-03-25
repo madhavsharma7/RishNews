@@ -1,6 +1,6 @@
 function fetchHeadlines() {
   const apiKey = "773dcaa65d9b9a5df06b87e05a18b242"; // Replace with your valid API key
-//   const apiUrl = `https://gnews.io/api/v4/top-headlines?category=business&apikey=${apiKey}`;
+  // const apiUrl = `https://gnews.io/api/v4/top-headlines?category=business&apikey=${apiKey}`;
 
   fetch(apiUrl)
     .then((response) => {
