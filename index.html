@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Media.css" />
+
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <!-- Navbar  -->
-        <div class="navbar">
-            <header>
-                <nav id="search">
-                    <ul>
-                        <li><input type="text" placeholder="Search"></li>
-                        <div>
-                            <li>
-                                <h1 class="logo"><a href="index.html"> the rish <span class="logo-part">news.</span>
-                                    </a></h1>
-                            </li>
-                        </div>
-                        <div>
-                            <li> <a class="sign-in" href="./Login/index.html"> Sign in</a></li>
-                        </div>
+      <!-- Navbar  -->
+      <div class="navbar">
+        <header>
+          <nav id="search">
+            <ul>
+              <li><input type="text" placeholder="Search" /></li>
+              <div>
+                <li>
+                  <h1 class="logo">
+                    <a href="index.html">
+                      the rish <span class="logo-part">news.</span>
+                    </a>
+                  </h1>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <a class="sign-in" href="./Login/index.html"> Sign in</a>
+                </li>
+              </div>
 
-                        <li><a class="sub" href="./Subscribe/index.html">Subscribe</a></li>
-                    </ul>
-                </nav>
-            </header>
+              <li>
+                <a class="sub" href="./Subscribe/index.html">Subscribe</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-            <div id="navbar-items">
-                <ul>
+        <div id="navbar-items">
+          <ul>
+            <a href="./index.html" data-category="home">Home</a>
 
-                    <a href="./index.html" data-category="home">Home</a>
-
-                    <!-- Categories Dropdown -->
-                    <a href="./World/world.html" data-category="world">World</a>
-                    <a href="./International/nation.html" data-category="nation">Nation</a>
-                    <a href="./Business/business.html" data-category="business">Business</a>
-                    <a href="./technology/tech.html" data-category="technology">Technology</a>
-                    <a href="./Entertainment/entertainment.html" data-category="entertainment">Entertainment</a>
-                    <a href="./Sports/sports.html" data-category="sports">Sports</a>
-                    <a href="./Science/Science.html" data-category="science">Science</a>
-                    <a href="./Ḥealth/health.html" data-category="health">Health</a>
-
-                    </li>
-                </ul>
-            </div>
+            <!-- Categories Dropdown -->
+            <a href="./World/world.html" data-category="world">World</a>
+            <a href="./International/nation.html" data-category="nation"
+              >Nation</a
+            >
+            <a href="./Business/business.html" data-category="business"
+              >Business</a
+            >
+            <a href="./technology/tech.html" data-category="technology"
+              >Technology</a
+            >
+            <a
+              href="./Entertainment/entertainment.html"
+              data-category="entertainment"
+              >Entertainment</a
+            >
+            <a href="./Sports/sports.html" data-category="sports">Sports</a>
+            <a href="./Science/Science.html" data-category="science">Science</a>
+            <a href="./Ḥealth/health.html" data-category="health">Health</a>
+          </ul>
         </div>
+      </div>
     </div>
 
     <!-- News  -->
 
     <main id="news-container">
-        <h1>Top Headlines</h1>
-        <hr class="title-hr">
-        <div id="headlines-container"></div>
-        <h1> Latest News</h1>
-        <hr class="title-hr">
-        <div id="search-container"></div>
+      <h1>Top Headlines</h1>
+      <hr class="title-hr" />
+      <div id="headlines-container"></div>
+      <h1 class="latestnews">Latest News</h1>
+      <hr class="title-hr" />
+      <div id="search-container"></div>
     </main>
 
     <!-- Footer -->
 
     <div id="footer">
-        <div class="navbar-items-footer">
-            <ul>
-                <a href="#" data-category="home">Home</a>
-                <a href="#" data-category="world">World</a>
-                <a href="#" data-category="nation">Nation</a>
-                <a href="#" data-category="business">Business</a>
-
-            </ul>
-            <p class="footer-logo"> the rish news. </p>
-            <p class="footer-copyright"> Copyright &copy; 2025 the rish news. All Right Reserved </p>
-        </div>
-        <div id="headlines"></div>
-
+      <div class="navbar-items-footer">
+        <ul>
+          <a href="#" data-category="home">Home</a>
+          <a href="#" data-category="world">World</a>
+          <a href="#" data-category="nation">Nation</a>
+          <a href="#" data-category="business">Business</a>
+        </ul>
+        <p class="footer-logo">the rish news.</p>
+        <p class="footer-copyright">
+          Copyright &copy; 2025 the rish news. All Right Reserved
+        </p>
+      </div>
+      <div id="headlines"></div>
     </div>
 
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

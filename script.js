@@ -28,16 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
           newsItem.innerHTML = `
                     
-                        <img class="img" src="${
-                          article.image || "fallback-image.jpg"
-                        }" alt="${
-            article.title
-          }" style="width:100%; max-width:500px;">
+                        <img class="img" src="${article.image || "fallback-image.jpg"
+            }" alt="${article.title
+            }" style="width:100%; max-width:500px;">
                         <h2 class="title">${article.title}</h2>
                         <p class="desc">${article.description}</p>
-                        <p class="readmore"><a href="${
-                          article.url
-                        }" target="_blank"> Read more</a></p>
+                        <p class="readmore"><a href="${article.url
+            }" target="_blank"> Read more</a></p>
                         <hr>
                     
                     `;
@@ -75,16 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
           let newsItem = document.createElement("div");
           newsItem.classList.add("news-item");
           newsItem.innerHTML = `
-                        <img class="img-news" src="${
-                          article.image || "fallback-image.jpg"
-                        }" alt="${
-            article.title
-          }" style="width:100%; max-width:500px;">
+                        <img class="img-news" src="${article.image || "fallback-image.jpg"
+            }" alt="${article.title
+            }" style="width:100%; max-width:500px;">
                         <h2 class="h2-news">${article.title}</h2>
                         <p class="p-news">${article.description}</p>
-                        <p class="readmore-news"> <a href="${
-                          article.url
-                        }" target="_blank">Read more</a></p>
+                        <p class="readmore-news"> <a href="${article.url
+            }" target="_blank">Read more</a></p>
                         <hr>
                     `;
           container.appendChild(newsItem);
